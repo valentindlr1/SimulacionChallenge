@@ -14,6 +14,11 @@ function pluck(array, propiedad) {
   // Pista: es una buena oportunidad para usar map.
 
   // Tu código acá:
+  let modArray = []
+  array.map(function(element){
+    modArray.push(element[propiedad])
+  })
+  return modArray;
 
 }
 
